@@ -67,7 +67,7 @@ const ItemListContainer = ({ greeting }) => {
                 <div className="hero-content">
                     <div className="hero-logo">
                         <img
-                            src="./img/logo-el-gordo-burguer.png"
+                            src="/img/logo-burger.webp" // RUTA CORREGIDA: Ahora busca en /public/img
                             alt="El Gordo Burguer Logo"
                             className="hero-logo-image"
                         />
@@ -218,4 +218,4 @@ const ItemListContainer = ({ greeting }) => {
     );
 };
 
-export default ItemListConta
+export default ItemListContainer;

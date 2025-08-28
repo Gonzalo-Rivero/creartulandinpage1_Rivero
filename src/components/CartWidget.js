@@ -19,4 +19,4 @@ const CartWidget = () => {
     );
 };
 
-export default CartWi
+export default CartWidget;
