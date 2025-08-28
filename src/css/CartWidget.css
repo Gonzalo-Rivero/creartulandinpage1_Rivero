@@ -1,0 +1,57 @@
+/* CartWidget Styles */
+.cart-widget {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.cart-container:hover {
+    background-color: rgba(176, 181, 4, 0.1);
+}
+
+.cart-icon {
+    color: #374151;
+    transition: all 0.3s ease;
+}
+
+.cart-container:hover .cart-icon {
+    color: #B0B504;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #EF4444;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+/* Animación del contador */
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}

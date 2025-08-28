@@ -1,0 +1,155 @@
+/* NavBar Styles */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+/* Logo */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-image {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #EAF105, #B0B504);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* Desktop Menu */
+.desktop-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-link {
+    color: #374151;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #B0B504;
+    background-color: rgba(176, 181, 4, 0.1);
+}
+
+/* Cart */
+.desktop-cart {
+    display: block;
+}
+
+/* Mobile Menu */
+.mobile-menu-container {
+    display: none;
+    align-items: center;
+    gap: 8px;
+}
+
+.mobile-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 6px;
+    color: #374151;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-button:hover {
+    color: #B0B504;
+    background-color: #F3F4F6;
+}
+
+.mobile-menu {
+    background: white;
+    border-top: 1px solid #E5E7EB;
+}
+
+.mobile-menu-content {
+    padding: 8px 16px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.mobile-nav-link {
+    color: #374151;
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.mobile-nav-link:hover {
+    color: #B0B504;
+    background-color: rgba(176, 181, 4, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .desktop-cart {
+        display: none;
+    }
+
+    .mobile-menu-container {
+        display: flex;
+    }
+
+    .navbar-container {
+        padding: 0 16px;
+    }
+
+    .logo-text {
+        font-size: 1.25rem;
+    }
+
+    .logo-image {
+        height: 40px;
+        width: 40px;
+    }
+}

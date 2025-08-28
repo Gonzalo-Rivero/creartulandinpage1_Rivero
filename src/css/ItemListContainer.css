@@ -1,0 +1,475 @@
+/* ItemListContainer Styles */
+.main-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1F2937, #000000, #374151);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(176, 181, 4, 0.2));
+}
+
+.hero-content {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.hero-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.hero-logo-image {
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    border: 4px solid #EAF105;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #D1D5DB;
+    margin-bottom: 32px;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+/* Categories Section */
+.categories-section {
+    padding: 80px 0;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.category-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #E5E7EB;
+}
+
+.category-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(-8px);
+    border-color: #B0B504;
+}
+
+.category-image-container {
+    position: relative;
+    height: 192px;
+    overflow: hidden;
+}
+
+.category-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.category-card:hover .category-image {
+    transform: scale(1.1);
+}
+
+.category-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+}
+
+.category-content {
+    padding: 32px;
+}
+
+.category-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #EAF105, #B0B504);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.category-card:hover .category-icon {
+    transform: scale(1.1);
+}
+
+.category-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1F2937;
+    margin-bottom: 8px;
+}
+
+.category-count {
+    color: #6B7280;
+    margin-bottom: 16px;
+}
+
+.category-button {
+    color: #B0B504;
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.category-button:hover {
+    color: #757903;
+}
+
+/* Featured Burgers Section */
+.featured-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1F2937, #000000);
+}
+
+.burgers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
+}
+
+.burger-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.burger-card:hover {
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    transform: translateY(-8px);
+}
+
+.burger-image-container {
+    position: relative;
+    height: 256px;
+    overflow: hidden;
+}
+
+.burger-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.burger-card:hover .burger-image {
+    transform: scale(1.1);
+}
+
+.burger-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.burger-badge.bestseller {
+    background-color: #F59E0B;
+    color: black;
+}
+
+.burger-badge.especial {
+    background-color: #EF4444;
+    color: white;
+}
+
+.burger-badge.nuevo {
+    background-color: #10B981;
+    color: white;
+}
+
+.burger-content {
+    padding: 24px;
+}
+
+.burger-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1F2937;
+    margin-bottom: 8px;
+}
+
+.burger-description {
+    color: #6B7280;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.burger-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #B0B504;
+}
+
+.add-button {
+    background: #B0B504;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.add-button:hover {
+    background: #757903;
+}
+
+/* Features Section */
+.features-section {
+    background: rgba(55, 65, 81, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 80px 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 32px;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    background: rgba(55, 65, 81, 0.3);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #EAF105, #B0B504);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.feature-description {
+    color: #D1D5DB;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 80px 0;
+    background: #1F2937;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    text-align: center;
+}
+
+.stat-item {
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: scale(1.05);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.stat-item:hover .stat-number {
+    color: #B0B504;
+}
+
+.stat-number-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.star-icon {
+    color: #F59E0B;
+}
+
+.stat-label {
+    color: #9CA3AF;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #000000, #374151);
+    padding: 80px 0;
+}
+
+.cta-content {
+    max-width: 768px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 24px;
+}
+
+.cta-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.cta-subtitle {
+    font-size: 1.25rem;
+    color: #D1D5DB;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #EAF105, #B0B504);
+    color: black;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(234, 241, 5, 0.3);
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, #B0B504, #10B981);
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(234, 241, 5, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+
+    .hero-logo-image {
+        height: 96px;
+        width: 96px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .burgers-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .cta-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 640px) {
+    .hero-buttons {
+        flex-direction: row;
+        gap: 24px;
+    }
+}
